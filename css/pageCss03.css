@@ -1,0 +1,375 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+}
+.container{
+    width: 100%;
+    /* position: relative; */
+}
+.nav{
+    /* position: fixed; */
+    width: 100%;
+    height:42px;
+    background-color:rgb(245, 245,245);
+}
+.logo{
+    /* margin-left: 50px; */
+    float: left;
+}
+.nav .logo img{
+    width: 186px;
+    height: 40px;
+}
+/*顶部导航栏nav的左部分：left_nav*/
+.left_nav{
+    float: left;
+    height:42px;
+    background-color:rgb(245, 245,245);
+}
+.left_nav ul{
+    margin-left: 15px;
+    list-style: none;
+}
+.left_nav ul li{
+    display: block;
+    float: left;
+    height: 42px;
+    line-height: 42px;/*居中显示*/
+}
+.left_nav ul #ranking_list{
+    margin-left: 10px;
+}
+#contest ul a{
+    font-size: 12px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;/*将链接设置为块状，关键*/
+    width: 100px;
+    height: 42px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+}
+.left_nav ul li ul{
+    display: none;
+    width: 67px;
+    margin-left: 0px;
+}
+.left_nav ul li ul li #yul{
+    margin-top:-44px; 
+    margin-left: 67px;
+    display: none;
+}
+.left_nav ul li ul li:hover #yul{
+    display: block;
+    position: absolute;
+}
+.left_nav ul li ul li #yul li #Eul{
+    display: none;
+}
+.left_nav ul li ul li #yul li:hover #Eul{
+    margin-top: -42px;
+    margin-left: 67px;
+    display: block;
+}
+.left_nav ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+.left_nav ul li:hover ul li{
+    background-color:white;
+    left: -87px;
+}
+.left_nav ul li:hover ul li a{
+    background-color: rgb(245, 245,245);
+    color:black;
+}
+.left_nav a{
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;/*将链接设置为块状，关键*/
+    width: 65px;
+    height: 42px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+}
+.left_nav li a:hover{
+    background-color:white;
+}
+.left_nav ul #ranking_list ul{
+    display: none;
+}
+.left_nav ul #ranking_list ul li{
+    display: block;
+    background-color: burlywood;
+}
+.left_nav ul #ranking_list:hover ul{
+    display: block;
+}
+.nav .admini_img{
+    margin-left: 1140px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/administor.png);
+}
+.admini_img img{
+    width: 30px;
+    height: 30px;
+}
+.center_nav{
+    margin-top: -32px;
+    margin-left: 800px;
+    float: left;
+}
+.center_nav .admini_img{
+    float: left;
+}
+.center_nav ul li {
+    list-style: none;
+}
+.center_nav ul a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+.right_nav{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+    margin-top: -35px;
+    margin-left: 20px;
+    float: left;
+}
+.right_nav ul li{
+    line-height: 30px;
+    display: block;
+    width: 40x;
+    height: 20px;
+}
+.right_nav ul a:hover{
+    background-color:white;
+    display: block;
+    width: 30x;
+    height: 44px;
+}
+.right_nav ul li{
+    display: inline;
+    list-style: none;
+}
+.right_nav  a{
+    line-height: 30px;
+    display: block;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+}
+#ranking_list ul a{
+    font-size: 12px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    display: block;/*将链接设置为块状，关键*/
+    width: 100px;
+    height: 42px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+}
+/*顶部导航栏nav的左部分：left_nav*/
+
+/*左侧固定导航栏：leftsider_nav*/
+.leftsider_nav{
+    /* display: none; */
+    border-color: white;
+    bottom: 400px;
+    top:146px;
+    position: fixed;
+    width: 150px;
+    height:400px;
+    background-color: pink;
+}
+.leftsider_nav ul li{
+    list-style: none;
+}
+.leftsider_nav ul li:hover #text,.leftsider_nav ul li:hover #grammer,
+.leftsider_nav ul li:hover #word,.leftsider_nav ul li:hover #exam,
+.leftsider_nav ul li:hover #bag,.leftsider_nav ul li:hover #hear{
+    margin-left: 150px;
+    margin-top: -100px;
+    display: block;
+}
+.leftsider_nav a{
+    background-color:lightskyblue;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+.leftsider_nav ul li ul li{
+    background-color: pink;
+}
+.leftsider_nav ul li a:hover{
+    border-left-color: greenyellow;
+    border-left-width: 4px;
+    width: 150px;
+    height: 50px;
+    border-left-color: green;
+    border-left-style: groove;
+    background-color:white;
+    color: green;
+    font-size: 24px;
+}
+.leftsider_nav ul li #grammer,.leftsider_nav ul li #text,
+.leftsider_nav ul li #word,.leftsider_nav ul li #exam,
+.leftsider_nav ul li #bag,.leftsider_nav ul li #hear{
+    display: none;
+}
+/*Else_cont:用于承载除顶部导航栏内的所有内日，具体有serch,content,copyright这三大块*/
+.Else_cont{
+    /* margin-top:42px; */
+    top:42px;
+    width: 100%;
+    height: 1104px;
+    /* position: relative; */
+}
+.books_nav{
+    width: 50%;
+    height: 30px;
+    margin-left: 200px;
+    padding-top: 5px;
+    background-color: lightblue;
+}
+.books_nav ul li{
+    display: inline;
+    list-style: none;
+}
+.books_nav a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.books_nav a:hover{
+    /* width: 100px;
+    display: block;
+    height: 30px; */
+    background-color: white;
+    font-size: 20px;
+    color: red;
+    font-weight: 500px;
+}
+.unit_btn{
+    margin-top: 15px;
+    width: 61%;
+    height: 30px;
+    background-color: lightskyblue;
+    margin-left: 200px;
+}
+.unit_btn ul #one:visited{/*visited：已经访问过的a标签状态*/
+    background-color: white;
+    color: red;
+}
+.unit_btn ul{
+    padding-top: 5px;
+}
+.unit_btn ul li{
+    border: 2px solid white;
+    margin-left: 20px;
+    display: inline;
+    list-style: none;
+}
+.unit_btn ul a:hover{
+    /* display: block; */
+    background-color: white;
+    color: red;
+    font-weight: 500px;
+}
+.unit_btn ul a{
+    text-decoration: none;
+    color: #666;
+}
+/*搜索框*/
+.search{
+    width: 100%;
+    height:104px;
+}
+.search img{
+    float: left;
+    /* margin-left: -10px; */
+}
+.form{
+    float: left;
+}
+.form1 input {
+    width:648px;
+    height:40px;
+    border: 2px solid rgb(87, 188,76);
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.form2 button {
+    width: 102px;
+    height: 44px;
+    background-color: rgb(87, 188,76);
+    border: 2px solid rgb(87, 188,76);
+    font-size: 16px;
+}
+.form2 {
+    margin-top:-44px;
+    margin-left: 667px;
+    float: right;
+}
+.form2 a{
+    text-decoration: none;
+    color: white;
+}
+/*content：主体内容承载区*/
+.content{
+    width: 100%;
+    height: 800px;
+    /* background-color: lightgreen; */
+    background-image: url(../images/cont_background.jpg);
+    background-size: 100% 800px;
+}
+/*copyright:底部版权区*/
+.copyright{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(232, 232,232);
+}
+.copyright_content{
+	padding-top: 20px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.copyright_content li{
+	list-style-type: none;
+	background: url(../images/line.png) no-repeat right center;
+	float: left;
+	width: 200px;
+	text-align: center;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+.copyright_content a{
+	text-decoration: none;
+	color: #999;
+	font-size: 18px;
+}
+.copyright_content li ul li a{
+	font-size: 14px;
+}

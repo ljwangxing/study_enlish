@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page03</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/pageCss03.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/page01.js"></script>
+    </head>
+    <body onUnload="window.alert('谢谢您的光临，欢迎下次再来')">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--container用来包含所有东西-->
+        <div class="container"><!--container开始-->
+            <div class="nav"><!--nav导航栏开始-->
+                <div class="logo">
+                    <img src="../images/logo.png">
+                </div>
+                <div class="left_nav"><!--left_nav:nav当中的左部导航栏开始-->
+                    <ul>
+                        <li><a href="#">学习中心</a>
+                            <ul>
+                                <li><a href="#">智能同步</a>
+                                    <ul id="yul">
+                                        <li><a href="#" id="bTn">英语同步</a</li>
+                                        <li><a href="#">数学同步</a></li>
+                                        <li><a href="#">物理同步</a></li>
+                                        <li><a href="#">化学同步</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">单词速记</a></li>
+                            </ul>
+                        </li>
+                        <li id="ranking_list"><a href="#">排行榜</a>
+                            <ul>
+                                <li><a href="#"></a>武力值榜</li>
+                                <li><a href="#"></a>学习排行榜</li>
+                                <li><a href="#"></a>测试排行榜</li>
+                                <li><a href="#"></a>竞赛排行榜</li>
+                            </ul>
+                        </li>
+                        <li id="contest"><a href="#">比武场</a>
+                            <ul>
+                                <li><a href="#">两人随机PK</a></li>
+                                <li><a href="#">创建房间PK</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!--left_nav:nav当中的左部导航栏结束-->
+                <div class="admini_img">
+                    <img src="../images/administor.png">
+                </div>
+                <!--right_nav:顶部导航栏nav当中的右部导航栏开始-->
+                <div class="center_nav">
+                    <ul>
+                        <li onclick="alertFun()"><a href="#">签到</a></li>
+                        <li><a href="#">等级值</a></li>
+                    </ul>
+                </div>
+                <div class="right_nav">
+                    <ul>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div>
+                <!--right_nav:顶部导航栏nav当中的右部导航栏结束-->
+            </div><!--nav导航栏结束-->
+            <div class="Else_cont"><!--Else_cont：装载除nav导航栏之外的所有内容开始-->
+                <!--search搜索框开始-->
+                <div class="search">
+                    <div class="img">
+                        <img src="../images/flash.gif"/>
+                    </div>
+                    <div class="form">
+                        <div class="form1">
+                            <input type="text" placeholder="输入您喜爱的课程">
+                        </div>
+                        <div class="form2">
+                            <button><a href="#">搜索</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!--search搜索框结束-->
+                <div class="content"><!--content:Else_cont当中写内容的-开始-->
+                    <div class="leftsider_nav" id="leftsider_nav">
+                        <ul>
+                            <li><a href="#" id="test">评估中心</a></li>
+                            <li><a href="#">词汇中心</a>
+                                <ul id="word">
+                                    <li><a href="../html/page04.html" target="_blank">学习</a></li>
+                                    <li><a href="../html/page06.html" target="_blank">测试</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">课文中心</a>
+                                <ul id="text">
+                                    <li><a href="#">学习</a></li>
+                                    <li><a href="#">背诵</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">语法中心</a>
+                                <ul id="grammer">
+                                    <li><a href="#">学习</a></li>
+                                    <li><a href="#">评测</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">听力中心</a>
+                                <ul id="hear">
+                                    <li><a href="#">学习</a></li>
+                                    <li><a href="#">评测</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">测试中心</a>
+                                <ul id="exam">
+                                    <li><a href="#">单元测试</a></li>
+                                    <li><a href="#">自主测试</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">作业中心</a></li>
+                            <li><a href="#">智能书包</a>
+                                <ul id="bag">
+                                    <li><a href="#">错词本</a></li>
+                                    <li><a href="#">错题本</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont_top_nav">
+                        <div class="books_nav">
+                            <ul>
+                                <li><a href="#">学习中心</a><span>&gt;&gt;</span></li>
+                                <li><a href="#">智能同步</a><span>&gt;&gt;</span></li>
+                                <li><a href="#">英语同步</a><span>&gt;&gt;</li>
+                                <li><a href="#">Unit one</a></li>
+                            </ul>
+                        </div>
+                        <div class="unit_btn">
+                            <ul>
+                                <li><a href="#" id="one">Unit One</a></li>
+                                <li><a href="#">Unit Two</a></li>
+                                <li><a href="#">Unit Three</a></li>
+                                <li><a href="#">Unit Four</a></li>
+                                <li><a href="#">Unit Five</a></li>
+                                <li><a href="#">Unit Six</a></li>
+                                <li><a href="#">Unit Seven</a></li>
+                                <li><a href="#">Unit Eight</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--content:Else_cont当中写内容的-结束-->
+                <div class="copyright"><!--copyright:底部版权区开始-->
+                    <div class="copyright_content"><!--copyright_content:底部版权内容区-->
+                        <ul>
+                            <li><a href="#">关于</a>
+                                <ul>
+                                    <li><a href="#">校园故事</a>
+                                    <li><a href="#">联系我们</a>
+                                    <li><a href="#">加入我们</a>
+                                    <li><a href="#">版权声明</a>
+                                </ul>
+                            </li>
+                            <li><a href="#">课程</a>
+                                <ul>
+                                    <li><a href="#">小学课程</a>
+                                    <li><a href="#">初中课程</a>
+                                    <li><a href="#">高中课程</a>
+                                    <li><a href="#">高考专项</a>
+                                </ul>
+                            </li>
+                            <li><a href="#">留言</a>
+                                <ul>
+                                    <li><a href="#">新浪微博</a>
+                                    <li><a href="#">腾讯微博</a>
+                                    <li><a href="#">企业微信</a>
+                                    <li><a href="#">QQ空间</a>
+                                </ul>
+                            </li>
+                            <li><a href="#">关注</a>
+                                <ul>
+                                    <li><a href="#">家长意见</a>
+                                    <li><a href="#">学生留言</a>
+                                    <li><a href="#">学校反馈</a>
+                                    <li><a href="#">在线客服</a>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../images/weixin.png" />微信关注</a>
+                                <ul>
+                                    <li><img src="../images/qrcode.jpg"/></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--copyright_content:底部版权内容区结束-->
+                </div><!--copyriht:底部版权区结束-->
+            </div><!--Else_cont：装载除nav导航栏之外的所有内容结束-->
+        </div><!--container结束-->
+    </body>
+</html>
